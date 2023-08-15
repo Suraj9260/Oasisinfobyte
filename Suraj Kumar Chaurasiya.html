@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: blue;
+    color: white;
+
+  }
+
+  .navbar {
+    background-color: navy;
+    padding: 10px 0;
+  }
+
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px 23px;
+  }
+
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  .navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+  .navbar ul li {
+    margin-right: 20px;
+
+  }
+  .navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: lightgray;
+}
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* Adjust the value based on navbar height */
+  }
+
+  .content {
+    text-align: center;
+    
+  }
+  p {
+    text-align: center;
+    justify-items: auto;
+  }
+
+  #animatedText {
+    font-size: 24px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+  }
+
+  .footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 12px;
+  }
+  footer {
+    margin-bottom: 0;
+  }
+</style>
+</head>
+<body>
+<div class="navbar">
+  <div class="navbar-content">
+    <a class="navbar-logo" href="#">Logo</a>
+    <nav>
+      <ul>
+        <li><a href="\">Home</a></li>
+        <li><a href="\">About</a></li>
+        <li><a href="\">Services</a></li>
+        <li><a href="\">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="container">
+  <div class="content">
+    <h1>Welcome to Our Landing Page</h1>
+    <p id="animatedText">Discover amazing things with us! <br> Lorem ipsum dolor sit amet consectetur !</p>
+  </div>
+</div>
+<footer>
+    <div class="footer">
+      &copy; 2023 Your Company. All rights reserved.
+    </div>
+
+</footer>
+<script>
+  const animatedText = document.getElementById('animatedText');
+
+  setTimeout(() => {
+    animatedText.style.opacity = '1';
+    animatedText.style.transform = 'translateY(0)';
+  }, 500); // Adjust the delay as needed
+</script>
+</body>
+</html>
